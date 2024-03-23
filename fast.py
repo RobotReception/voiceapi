@@ -37,6 +37,8 @@ def send_message(message: Message):
     elif data["opration_number"] == 1:
         assistant.secound_op(question)  # Assuming typo correction and async method
         datalast =  assistant.read_json()
+        # assistant.update_json_file("data.json", last_update)
+
 
 
     elif data["opration_number"] == 2:
